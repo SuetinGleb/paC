@@ -394,8 +394,7 @@ def spirits_control(dt):
             sp.point_to = sp.run_up
             sp.update(dt)
     else:
-        # 7000 < pygame.time.get_ticks() < 27000 or 34000 < pygame.time.get_ticks() < 54000 or \
-        #   59000 < pygame.time.get_ticks() < 79000 or 83000 < pygame.time.get_ticks():
+      
         for sp in spirits:
             sp.point_to = sp.select_point()
             sp.update(dt)
